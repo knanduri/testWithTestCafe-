@@ -13,3 +13,10 @@ test('Click on Search Results and add ', async browser => {
     await page.searchCompany(browser);
     await page.addCompanytoCart(browser);
 });
+
+test.skip('Click Checkout, fill details & proceed to payment ', async browser => {
+    await page.searchCompany(browser);
+    await page.addCompanytoCart(browser);
+    await page.fillPersonalDetails(browser);
+    await page.clickProceedToPayment(browser);
+});

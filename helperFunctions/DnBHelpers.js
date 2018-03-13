@@ -27,3 +27,22 @@ import {ClientFunction, Selector} from 'testcafe';
          await browser.expect(getLocation()).eql('http://www.dnb.com.au/express/cart/cart.asp');
      };
 
+    export const fillPersonalDetails = async browser => {
+        await browser
+            .click(selectors.companyResults)
+            .click(selectors.purchaseType)
+            .click(selectors.addToCartButton);
+
+        const getLocation = ClientFunction(() => document.location.href);
+        await browser.expect(getLocation()).eql('http://www.dnb.com.au/express/cart/cart.asp');
+    };
+
+    export const clickProceedToPayment = async browser => {
+        await browser
+            .click(selectors.companyResults)
+            .click(selectors.purchaseType)
+            .click(selectors.addToCartButton);
+
+        const getLocation = ClientFunction(() => document.location.href);
+        await browser.expect(getLocation()).eql('http://www.dnb.com.au/express/cart/cart.asp');
+    };
