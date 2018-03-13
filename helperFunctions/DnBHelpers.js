@@ -3,7 +3,7 @@ import {ClientFunction, Selector} from 'testcafe';
    const selectors = {
        dnbExpressSearchBox: Selector('#txtQuickCriteria'),
        dnbExpressSearchButton: Selector('#btnSearch'),
-       companyResults: Selector('##data_14 > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1)'),
+       companyResults: Selector('.col-companyname').withText('QANTAS').nth(0),
        purchaseType: Selector('#HBRR_14'),
        addToCartButton: Selector('#btnAddToCart'),
     };
