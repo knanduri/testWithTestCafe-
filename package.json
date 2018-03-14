@@ -19,6 +19,7 @@
   "homepage": "https://github.com/knanduri/testWithTestCafe-#readme",
   "dependencies": {},
   "devDependencies": {
+    "casual": "^1.5.19",
     "testcafe": "^0.19.0"
   }
 }
