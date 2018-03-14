@@ -5,7 +5,7 @@ fixture `DnB Express: Verify Search Page`
     .page(`${getEnvironment}/express`);
 
 
-test.only('Search for a company', async browser => {
+test('Search for a company', async browser => {
     await page.searchCompany(browser);
 });
 
